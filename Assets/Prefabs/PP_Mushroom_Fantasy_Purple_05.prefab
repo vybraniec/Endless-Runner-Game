@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 6973583930937526632}
   - component: {fileID: 6298563588653598413}
   - component: {fileID: 8109867472652907015}
-  - component: {fileID: 7749838506462483411}
+  - component: {fileID: 4880438668223706271}
+  - component: {fileID: 7129907029913219856}
+  - component: {fileID: 4260304442928253537}
   m_Layer: 0
   m_Name: PP_Mushroom_Fantasy_Purple_05
   m_TagString: Obstacle
@@ -84,8 +86,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7749838506462483411
-MeshCollider:
+--- !u!136 &4880438668223706271
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,7 +96,35 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1105425855394590978, guid: 7259cce9d7302d44a8f8bf53cb1bc376, type: 3}
+  m_Radius: 0.4
+  m_Height: 2.62
+  m_Direction: 1
+  m_Center: {x: -0.06, y: 1.2, z: -0.12}
+--- !u!136 &7129907029913219856
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7749838506462483410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.79
+  m_Height: 1.53
+  m_Direction: 1
+  m_Center: {x: -0.06, y: 2.6, z: 0.028942496}
+--- !u!136 &4260304442928253537
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7749838506462483410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.66
+  m_Height: 1.22
+  m_Direction: 1
+  m_Center: {x: -0.79, y: 3.24, z: 0.028942496}

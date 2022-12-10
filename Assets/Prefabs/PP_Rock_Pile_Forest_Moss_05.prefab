@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 317944115831912086}
   - component: {fileID: 3730752802815293747}
   - component: {fileID: 1450929432033873401}
-  - component: {fileID: 1090505329258949675}
+  - component: {fileID: 8867266985396935902}
+  - component: {fileID: 1705134411141067739}
   m_Layer: 0
   m_Name: PP_Rock_Pile_Forest_Moss_05
   m_TagString: Obstacle
@@ -84,8 +85,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1090505329258949675
-MeshCollider:
+--- !u!65 &8867266985396935902
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,7 +95,19 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7011766824195413768, guid: b0ba9b7cecd675b45894beca57389899, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 3.061255, y: 5.5743732, z: 3.4793725}
+  m_Center: {x: -0.43775654, y: 2.7871866, z: 0.0341897}
+--- !u!65 &1705134411141067739
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090505329258949676}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8159502, y: 5.5743732, z: 3.3186877}
+  m_Center: {x: 1.5306286, y: 2.7871866, z: -0.48803484}

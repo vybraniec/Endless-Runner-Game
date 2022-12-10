@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5206183479118261842}
   - component: {fileID: 5206183479119556210}
   - component: {fileID: 5206183479120555186}
-  - component: {fileID: 710727104888333924}
+  - component: {fileID: 3170820518313228019}
   m_Layer: 0
   m_Name: Flower4
   m_TagString: Obstacle
@@ -85,8 +85,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &710727104888333924
-MeshCollider:
+--- !u!136 &3170820518313228019
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -95,7 +95,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 0c77d10ec0c97b54da131d936ef92059, type: 3}
+  m_Radius: 1.91
+  m_Height: 7.74
+  m_Direction: 1
+  m_Center: {x: -0.019365907, y: 3.4649575, z: 0}

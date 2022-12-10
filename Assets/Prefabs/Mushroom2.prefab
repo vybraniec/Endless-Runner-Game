@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3117357111836593711}
   - component: {fileID: 3117357111839460879}
   - component: {fileID: 3117357111838493903}
-  - component: {fileID: 6899819223556892362}
+  - component: {fileID: 3716671200600292027}
   m_Layer: 0
   m_Name: Mushroom2
   m_TagString: Obstacle
@@ -85,8 +85,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6899819223556892362
-MeshCollider:
+--- !u!136 &3716671200600292027
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -95,7 +95,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 64bc47654f6eeab479ac0592b8150617, type: 3}
+  m_Radius: 1.500168
+  m_Height: 4.0066433
+  m_Direction: 1
+  m_Center: {x: 0.03313911, y: 2.000958, z: -0.124159396}

@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 487885705732503582}
   - component: {fileID: 487885705731209278}
   - component: {fileID: 487885705730079486}
-  - component: {fileID: -1343294358015784663}
+  - component: {fileID: 8818439242280290041}
+  - component: {fileID: 4261130742711808845}
+  - component: {fileID: 3374446672127984024}
   m_Layer: 0
   m_Name: WoodFence2
   m_TagString: Obstacle
@@ -84,8 +86,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &-1343294358015784663
-MeshCollider:
+--- !u!65 &8818439242280290041
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,7 +96,32 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: a7eee764f17b55b4dbca990db05fd90b, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 3.3629642, y: 3.1051645, z: 0.79999995}
+  m_Center: {x: 2.7185175, y: 1.5525823, z: 0}
+--- !u!65 &4261130742711808845
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487885705732334654}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.7922325, y: 3.126315, z: 0.79999995}
+  m_Center: {x: -3.0038834, y: 1.5631576, z: 0}
+--- !u!65 &3374446672127984024
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487885705732334654}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.63013, y: 0.71068, z: 0.79999995}
+  m_Center: {x: -0.28410804, y: 2.530097, z: 0}

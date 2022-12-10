@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 3836581064361698930}
   - component: {fileID: 185102455637010903}
   - component: {fileID: 2699181173809814813}
-  - component: {fileID: 4500668923149335751}
+  - component: {fileID: 1986780544626827346}
+  - component: {fileID: 6852484342139032592}
+  - component: {fileID: 3775022050849122914}
   m_Layer: 0
   m_Name: PP_Rock_Moss_Grown_11
   m_TagString: Obstacle
@@ -84,8 +86,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4500668923149335751
-MeshCollider:
+--- !u!65 &1986780544626827346
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,7 +96,32 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1806810134458854372, guid: 7ed75b99c26237b4d844c1581c5da1b2, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 2.3628614, y: 2.430519, z: 3.6700075}
+  m_Center: {x: -0.96420205, y: 1.2152596, z: 0.6858429}
+--- !u!65 &6852484342139032592
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4500668923149335752}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1221209, y: 2.430519, z: 2.755194}
+  m_Center: {x: -0.3142028, y: 1.2152596, z: -0.6061305}
+--- !u!65 &3775022050849122914
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4500668923149335752}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.64064, y: 2.430519, z: 3.2206252}
+  m_Center: {x: 1.0339435, y: 1.2152596, z: 0.2364608}

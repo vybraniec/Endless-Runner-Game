@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4114348814129731227}
   - component: {fileID: 4114348814133155515}
   - component: {fileID: 4114348814132155515}
-  - component: {fileID: 64806562698990992}
+  - component: {fileID: 5811460811248443895}
   m_Layer: 0
   m_Name: TreeStump
   m_TagString: Obstacle
@@ -85,8 +85,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64806562698990992
-MeshCollider:
+--- !u!136 &5811460811248443895
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -95,7 +95,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 71e7cb600453b0a4791c471c86dcb60a, type: 3}
+  m_Radius: 1.07
+  m_Height: 2.39
+  m_Direction: 2
+  m_Center: {x: 0, y: 0.74336404, z: -0.02}
