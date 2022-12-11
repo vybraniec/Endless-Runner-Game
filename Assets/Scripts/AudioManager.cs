@@ -11,6 +11,7 @@ public class AudioManager : MonoBehaviour
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
             s.source.loop = s.Loop;
+            s.source.volume = s.volume;
         }
         PlaySound("soundtrack");
     }

@@ -22,7 +22,6 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
     public Transform groundCheck;
     private float groundDistance = 0.2f;
-
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -88,7 +87,7 @@ public class PlayerMovement : MonoBehaviour
         
         if(transform.position != targetPosition){
             Vector3 difference = targetPosition - transform.position;
-            controller.Move(difference * 20 * Time.deltaTime);
+            controller.Move(difference * 15 * Time.deltaTime);
         }
         controller.Move(moveDirection * Time.deltaTime);
     }

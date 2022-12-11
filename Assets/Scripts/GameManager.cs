@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         SceneManager.LoadScene("MainScene");
+        FindObjectOfType<AudioManager>().PlaySound("soundtrack");
     }
 
     public void Quit()
