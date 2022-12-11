@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController controller;
     private GameManager gameManager;
     private Animator animator;
+    private AudioManager audioManager;
     public float speed = 17.0f;
     public float jumpForce = 15.0f;
     public float gravity = -20.0f;
@@ -27,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
         gameManager = FindObjectOfType<GameManager>();
+        audioManager = FindObjectOfType<AudioManager>();
     }
 
     void Update()
@@ -65,15 +67,15 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
 
         if(Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)){
-            currentLane--;
-            if(currentLane < 0){
-                currentLane = 0;
+            if(currentLane > 0){
+                audioManager.PlaySound("strafe-sound");
+                currentLane--;
             }
         }
         if(Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)){
-            currentLane++;
-            if(currentLane > 2){
-                currentLane = 2;
+            if(currentLane < 2){
+                audioManager.PlaySound("strafe-sound");
+                currentLane++;
             }
         }
         Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up;
@@ -92,6 +94,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private IEnumerator Slide(){
+        audioManager.PlaySound("slide-sound");
         Sliding(true);
         yield return new WaitForSeconds(0.2f);
         ShrinkController();
@@ -113,6 +116,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {   
+        audioManager.PlaySound("jump-sound");
         StopCoroutine(Slide());
         Sliding(false);
         velocity.y = jumpForce;
@@ -130,6 +134,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit){
         if (hit.transform.tag == "Obstacle"){
+            audioManager.PlaySound("die-sound");
+            audioManager.StopSound("soundtrack");
             gameManager.EndGame();
         }
     }
