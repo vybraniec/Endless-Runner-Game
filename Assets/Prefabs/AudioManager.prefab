@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5083656949198151005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5083656949198151003}
+  - component: {fileID: 5083656949198151004}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5083656949198151003
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5083656949198151005}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5083656949198151004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5083656949198151005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cd5ee89147785f4e8a137be2f7fd3ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: soundtrack
+    clip: {fileID: 8300000, guid: 63b1b5e6eb05af04fa712adb5f350995, type: 3}
+    volume: 1
+    Loop: 1
+    source: {fileID: 0}
+  - name: jump-sound
+    clip: {fileID: 8300000, guid: cf500704b0481044096ee95397858417, type: 3}
+    volume: 1
+    Loop: 0
+    source: {fileID: 0}
+  - name: chime-sound
+    clip: {fileID: 8300000, guid: 0216f322116eda84dac036377bcf2a81, type: 3}
+    volume: 0.5
+    Loop: 0
+    source: {fileID: 0}
+  - name: strafe-sound
+    clip: {fileID: 8300000, guid: 8a4f42d093971934ba44966b8a348707, type: 3}
+    volume: 1
+    Loop: 0
+    source: {fileID: 0}
+  - name: die-sound
+    clip: {fileID: 8300000, guid: 851a01d8346e8d84aab5f4c5789079b2, type: 3}
+    volume: 1
+    Loop: 0
+    source: {fileID: 0}
+  - name: pain-sound
+    clip: {fileID: 8300000, guid: b635270bd753d2445a1d2cdcc376ab41, type: 3}
+    volume: 1
+    Loop: 0
+    source: {fileID: 0}
+  - name: slide-sound
+    clip: {fileID: 8300000, guid: 1c856b668ae330f499ef6336cbd96ed4, type: 3}
+    volume: 1
+    Loop: 0
+    source: {fileID: 0}
+  - name: click-sound
+    clip: {fileID: 8300000, guid: 95d1e54e0640a4447bc767c15ea63cda, type: 3}
+    volume: 1
+    Loop: 0
+    source: {fileID: 0}
+  - name: gameover-sound
+    clip: {fileID: 8300000, guid: 5fd14caaa19ed6849b39c5bee64d3d3f, type: 3}
+    volume: 1
+    Loop: 0
+    source: {fileID: 0}
+  - name: chase-sound
+    clip: {fileID: 8300000, guid: d73eea5abd95fca43af795f9f844e785, type: 3}
+    volume: 1
+    Loop: 1
+    source: {fileID: 0}
+  - name: bg-sound
+    clip: {fileID: 8300000, guid: 9f82513b8f6546c41b6d5c21bcb3c222, type: 3}
+    volume: 1
+    Loop: 1
+    source: {fileID: 0}

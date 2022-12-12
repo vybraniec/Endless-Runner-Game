@@ -13,7 +13,6 @@ public class AudioManager : MonoBehaviour
             s.source.loop = s.Loop;
             s.source.volume = s.volume;
         }
-        PlaySound("soundtrack");
     }
 
     public void PlaySound(string name){

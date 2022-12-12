@@ -15,7 +15,8 @@ public class TileManager : MonoBehaviour
     private List<GameObject> activeTiles = new List<GameObject>();
     private List<GameObject> activeTerrain = new List<GameObject>();
     public Transform playerTransform;
-    public float offset = 50;
+    public float tileOffset = 50;
+    public float terrainOffset = 100;
     void Start()
     {
         SpawnTile(0);
@@ -29,12 +30,12 @@ public class TileManager : MonoBehaviour
 
     void Update()
     {
-        if(playerTransform.position.z - offset >= tileSpawnPos - (tileQuantity * tileLength)){
+        if(playerTransform.position.z - tileOffset >= tileSpawnPos - (tileQuantity * tileLength)){
             SpawnTile(Random.Range(0, tiles.Length));
             Destroy(activeTiles[0]);
             activeTiles.RemoveAt(0);
         }
-        if(playerTransform.position.z - offset >= terrainSpawnPos.z - (terrainQuantity * terrainLength)){
+        if(playerTransform.position.z - terrainOffset >= terrainSpawnPos.z - (terrainQuantity * terrainLength)){
             SpawnTerrain();
             Destroy(activeTerrain[0]);
             activeTerrain.RemoveAt(0);

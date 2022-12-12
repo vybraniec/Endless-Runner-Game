@@ -132,9 +132,10 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit){
-        if (hit.transform.tag == "Obstacle"){
+        if (hit.transform.tag == "Obstacle" && !gameManager.gameOver){
+            audioManager.StopSound("chase-sound");
             audioManager.PlaySound("die-sound");
-            audioManager.StopSound("soundtrack");
+            audioManager.PlaySound("gameover-sound");
             gameManager.EndGame();
         }
     }

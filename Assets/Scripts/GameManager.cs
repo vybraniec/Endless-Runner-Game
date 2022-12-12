@@ -35,7 +35,6 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         SceneManager.LoadScene("MainScene");
-        FindObjectOfType<AudioManager>().PlaySound("soundtrack");
     }
 
     public void Quit()
@@ -45,6 +44,7 @@ public class GameManager : MonoBehaviour
 
     void Update(){
         if(Input.anyKey && !gameStarted){
+            FindObjectOfType<AudioManager>().PlaySound("chase-sound");
             gameStarted = true;
             Destroy(gameStartText);
             scoreBox.SetActive(true);
