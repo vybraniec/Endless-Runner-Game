@@ -31,4 +31,19 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void RaisePitch(string name, float value){
+        foreach(Sound s in sounds){
+            if (s.name == name){
+                s.source.pitch += 0.2f;
+            }
+        }
+    }
+
+    public void ResetPitch(string name){
+        foreach(Sound s in sounds){
+            if (s.name == name){
+                s.source.pitch = 1;
+            }
+        }
+    }
 }
