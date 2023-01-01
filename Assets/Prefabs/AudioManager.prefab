@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: soundtrack
-    clip: {fileID: 8300000, guid: 63b1b5e6eb05af04fa712adb5f350995, type: 3}
+    clip: {fileID: 8300000, guid: ad0d6e49063df7d4ba14438ce8fdc29b, type: 3}
     volume: 1
     Loop: 1
     source: {fileID: 0}

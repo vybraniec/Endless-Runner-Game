@@ -1368,6 +1368,7 @@ GameObject:
   - component: {fileID: 1411955010}
   - component: {fileID: 1411955009}
   - component: {fileID: 1411955012}
+  - component: {fileID: 1411955013}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1474,6 +1475,18 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1411955013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411955008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83f0e34fb77211d41b54539d52e1500c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1534677546 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5083656949198151004, guid: 0e44da629dfa0324aafd55c502689435, type: 3}
@@ -1929,7 +1942,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 365, y: 600}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0.504
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
